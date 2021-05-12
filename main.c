@@ -32,7 +32,7 @@ int main(int ac, char **av)
 	while ((len = getline(&line, &size, fp)) != -1)
 	{
 		line_number++;
-		treat_line(&head, line);
+		/*	treat_line(&head, line);*/
 	}
 	free(line);
 	fclose(fp);
