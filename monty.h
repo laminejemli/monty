@@ -44,10 +44,14 @@ void _pall(stack_t **head, unsigned int line_number);
 void treat_line(stack_t **head, char *line);
 void _pint(stack_t **head, unsigned int line_number);
 void _pop(stack_t **head, unsigned int line_number);
+void _nop(stack_t **head, unsigned int line_number);
+void free_dlistint(stack_t *head);
 
 void treat_token(stack_t **head, char *token);
 void (*get_function(char *token))(stack_t **, unsigned int);
 void get_invalid_opcode(char *token);
+void _sub(stack_t **head, unsigned int line_number);
+void _swap(stack_t **head, unsigned int line_number);
 
 void is_number(char *str);
 

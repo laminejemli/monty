@@ -14,7 +14,7 @@ int main(int ac, char **av)
 	char *line = NULL;
 	size_t size = 0;
 	ssize_t len;
-	stack_t *head = NULL; 
+	stack_t *head = NULL;
 
 	if (ac != 2)
 	{
