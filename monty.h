@@ -40,7 +40,7 @@ typedef struct instruction_s
 void push(stack_t **stack, unsigned int line_number, char *arg);
 void _pall(stack_t **head, unsigned int line_number);
 void treat_line(stack_t **head, char *line);
-void _pint(stack_t **head, unsigned int line_number)
+void _pint(stack_t **head, unsigned int line_number);
 
 
 #endif
