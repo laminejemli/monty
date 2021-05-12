@@ -37,10 +37,19 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void push(stack_t **stack, unsigned int line_number, char *arg);
+void _push(stack_t **stack, unsigned int line_number, char *arg);
+
+char *check_push_arg(char *token);
 void _pall(stack_t **head, unsigned int line_number);
 void treat_line(stack_t **head, char *line);
 void _pint(stack_t **head, unsigned int line_number);
+void _pop(stack_t **head, unsigned int line_number);
 
+void treat_token(stack_t **head, char *token);
+void (*get_function(char *token))(stack_t **, unsigned int);
+void get_invalid_opcode(char *token);
 
+void is_number(char *str);
+
+void get_usage_err(void);
 #endif
