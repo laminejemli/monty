@@ -19,14 +19,14 @@ int main(int ac, char **av)
 	if (ac != 2)
 	{
 		dprintf(STDERR_FILENO, "USAGE: monty file\n");
-		exit(EXIT_FAILURE);
+		return(EXIT_FAILURE);
 	}
 
 	fp = fopen(av[1], "r");
 	if (fp == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", av[1]);
-		exit(EXIT_FAILURE);
+		return(EXIT_FAILURE);
 	}
 
 	while ((len = getline(&line, &size, fp)) != -1)
@@ -36,5 +36,5 @@ int main(int ac, char **av)
 	}
 	free(line);
 	fclose(fp);
-	exit(EXIT_SUCCESS);
+	return(EXIT_SUCCESS);
 }
