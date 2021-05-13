@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * _nop - does nothing.
- * @head: linked list'head address.
- * @line_number: line number of line we're reading.
+ * _nop - does nothing
+ * @head: linked list'head address
+ * @line_number: line number of line we're reading
  * Return: nothing
  */
 

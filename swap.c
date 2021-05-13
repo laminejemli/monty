@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * _swap - swap the top two elements of the stack.
- * @head: linked list's head address.
- * @line_number: line number from file.
+ * _swap - swap the top two elements of the stack
+ * @head: linked list's head address
+ * @line_number: line number from file
  * Return: nothing
  */
 void _swap(stack_t **head, unsigned int line_number)
@@ -29,7 +29,7 @@ void _swap(stack_t **head, unsigned int line_number)
 	((*head)->prev)->n = n;
 }
 /**
- * free_dlistint - free doubly linked lists
+ * free_dlistint - free  linked lists
  * @head: head of linked lists
  **/
 void free_dlistint(stack_t *head)

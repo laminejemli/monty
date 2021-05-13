@@ -1,12 +1,10 @@
 #include "monty.h"
 
 /**
- * treat_token - function that treats a token.
- * check if it's valid and has the necessary args
- * or if it's invalid.
- * @head: linked list's head address.
- * @token: token to check.
- * Return: nothing.
+ * treat_token - function that treats a token
+ * @head: linked list's head address
+ * @token: token to check
+ * Return: nothing
  */
 void treat_token(stack_t **head, char *token)
 {
@@ -35,9 +33,8 @@ void treat_token(stack_t **head, char *token)
 
 /**
  * get_function - returns the right function for the correponding function
- * for the given token.
- * @token: token to get its corresponding function.
- * Return: the right function for the given token.
+ * @token: token to get its corresponding function
+ * Return: the right function for the given token
  */
 void (*get_function(char *token))(stack_t **, unsigned int)
 {
@@ -77,9 +74,8 @@ void (*get_function(char *token))(stack_t **, unsigned int)
 
 /**
  * get_invalid_opcode - function to malloc invalid command and display
- * its corresponding error.
- * @token: invalid command (or opcode).
- * Return: nothing.
+ * @token: invalid command (or opcode)
+ * Return: nothing
  */
 void get_invalid_opcode(char *token)
 {
