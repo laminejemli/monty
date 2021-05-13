@@ -48,6 +48,7 @@ void (*get_function(char *token))(stack_t **, unsigned int)
 		{"pop", _pop},
 		{"nop", _nop},
 		{"sub", _sub},
+		{"add", _add},
 /*
 **
 {"div", _div},

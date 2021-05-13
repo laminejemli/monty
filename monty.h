@@ -54,6 +54,7 @@ void _sub(stack_t **head, unsigned int line_number);
 void _swap(stack_t **head, unsigned int line_number);
 
 void is_number(char *str);
+void _add(stack_t **head, unsigned int line_number);
 
 void get_usage_err(void);
 #endif
