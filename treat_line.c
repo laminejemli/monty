@@ -1,11 +1,10 @@
 #include "monty.h"
 
 /**
- * treat_line - function that gets the line from monty file and tokenize it
- * to check for the correct command.
- * @head: linked list' head address.
- * @line: line we're treating from the monty file.
- * Return: nothing.
+ * treat_line - function that gets the line from monty file
+ * @head: linked list head address
+ * @line: line we're treating from the monty file
+ * Return: nothing
  */
 void treat_line(stack_t **head, char *line)
 {
